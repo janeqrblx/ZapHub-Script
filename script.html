@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="script.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZapHub</title>
+    <link rel="icon" href="media/logo.png" />
+    <script src="https://kit.fontawesome.com/8870dfa52d.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="container-1">
+      <div class="hero">
+        <div class="navbar">
+          <img src="media/logo.png" href="/" />
+          <nav>
+            <ul>
+              <li>
+                <a href="/script">Copy Script</a>
+              </li>
+              <li>
+                <a href="/features">Features List</a>
+              </li>
+              <li>
+                <a href="https://linkvertise.com/608384/zaphub-key-system/1" target="_blank">Get Key</a>
+              </li>
+              <li>
+                <a href="https://discord.gg/8kZ9fBVmwQ" target="_blank">Discord Server</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="overlay">
+          <h1>ZapHub</h1>
+          <h2>By Zap Project</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container-2">
+      <input class="invisible" type="text" id="script" value="loadstring(game:HttpGet('https://itots.tk/zaphub/ZapHubFreeVersion'))()">
+      <button class="script" id="copybutton">
+        <p>Copy Script</p>
+      </button>
+    </div>
+    <div class="footer">Copyright © 2023 Zap Project. All rights reserved.</div>
+  </body>
+  <script>
+    document.getElementById("copybutton").addEventListener("click", function() {
+        var text = document.getElementById("script").value;
+    
+        navigator.clipboard.writeText(text).then(function() {
+            alert("Script was copied correctly");
+        }).catch(function(err) {
+            console.error("Error when copying the script: ", err);
+        });
+    });
+  </script>
+</html>
