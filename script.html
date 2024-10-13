@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="container-2">
-      <input alt="ZapHub Scripts" class="invisible" type="text" id="script" value="loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()">
+      <input class="invisible" type="text" id="script" value="loadstring(game:HttpGet('https://itots.tk/zaphub/ZapHubFreeVersion'))()">
       <button class="script" id="copybutton">
         <p>Copy Script</p>
       </button>
@@ -47,13 +47,12 @@
   </body>
   <script>
     document.getElementById("copybutton").addEventListener("click", function() {
-        var text = document.getElementById("script").value;
-    
-        navigator.clipboard.writeText(text).then(function() {
-            alert("Script was copied correctly");
-        }).catch(function(err) {
-            console.error("Error when copying the script: ", err);
-        });
+      var text = document.getElementById("script").value;
+      navigator.clipboard.writeText(text).then(function() {
+        alert("Script was copied correctly");
+      }).catch(function(err) {
+        console.error("Error when copying the script: ", err);
+      });
     });
   </script>
 </html>
